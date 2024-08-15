@@ -1,0 +1,323 @@
+@charset "utf-8";
+@import url(all.min.css);
+@import url(font.css);
+
+body {font-weight: 400;}
+.inner {max-width: 1200px;margin: 0 auto;position: relative;}
+
+
+/* header */
+header {
+    position: fixed;
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    z-index: 10;
+}
+header .inner {height: 80px;}
+header .logo {
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    left: 0;
+}
+header .logo > a {
+    display: block;
+    width: 150px; height: 26px;
+    overflow: hidden;
+    background: url(../img/sp_svg_icon.png) no-repeat;
+}
+header .logo > a:hover {
+    background: url(../img/logohover.png) no-repeat;
+    transition: all 0.8s;
+}
+
+header .gnb {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+header .gnb > li {
+    float: left;
+    margin: 0 20px;
+}
+header .gnb > li > a {
+    display: block;
+    padding: 5px;
+    color: rgba(255,255,255,0.7);
+}
+header .gnb > li > a:hover {
+    color: #fff;
+    transition: all 0.5s;
+}
+header .link_biz {
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    right: 55px;
+}
+header .link_biz > a {
+    padding: 5px 10px;
+    margin: 0 3px;
+    border: 1px solid rgba(255,255,255,0.5);
+    font-size: 14px;
+    color: rgba(255,255,255,0.5);
+    transition: all 0.3s;
+}
+header .link_biz > a:hover {
+    border-color: #fff;
+    background-color: rgba(255,255,255,0.1);
+    color: #fff;
+}
+
+/* main-visual */
+#main_visual {height: 750px;}
+#main_visual .swiper-slide {
+    overflow: hidden;
+    height: 750px;
+    background: no-repeat center/cover;
+    text-align: center;
+}
+#main_visual .swiper-slide.slide01 {
+    background-image: url(../img/main_lamp.jpg);
+}
+#main_visual .swiper-slide.slide02 {
+    background-image: url(../img/main_clock_plus.png);
+}
+#main_visual .swiper-slide .slide_content p {
+    position: absolute;
+    top: 40%; left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+}
+.btn_view {
+    position: absolute;
+    top: 55%; left: 50%; 
+    transform: translate(-50%,-50%);
+    padding: 12px 35px;
+    border-radius: 40px;
+    border: 1px solid rgba(255,255,255,0.7);
+    color: #fff;
+    z-index: 10;
+    transition: all 0.3s;
+}
+.btn_view:hover {
+    background: #56ac50;
+    border: transparent;
+}
+
+/* contents */
+.contents {
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+}
+.contents h1 {
+    text-align: center;
+    font-weight: 500;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.contents .text {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    line-height: 1.4;
+}
+.contents ul {
+    float: left;
+}
+.contents ul li {
+    display: inline-block;
+    padding: 0 50px;
+}
+.contents ul li figure {
+    text-align: center;
+}
+.contents ul li h2 {
+    text-align: center;
+    margin-top: 30px;
+}
+/* contents 2 */
+.area {
+    background: rgba(240, 240, 240, 0.8);
+}
+.contents2 {
+    width: 1200px;
+    height: 450px;
+    margin: 0 auto;
+}
+.contents2 .ai {
+    float: left;
+    margin-right: 180px;
+}
+.contents2 h1 {
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 20px;
+    padding-top: 140px;
+}
+.contents2 .text2 {
+    font-size: 14px;
+    color: #242424;
+    margin-bottom: 50px;
+    line-height: 1.8;
+}
+.contents2 ul {
+    float: left;
+}
+.contents2 ul li {
+    display: inline-block;
+    padding: 0 50px;
+}
+.contents2 ul li:last-child {
+    padding-right: 0;
+}
+.contents2 ul li figure {
+    margin: 15px 0 10px 0;
+}
+.contents2 ul li h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.contents2 .list2 {
+    margin-top: 50px;
+    width: 240px;
+    height: 280px;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 5px;
+    background: #fff;
+    padding: 30px;
+}
+
+/* blog */
+.blog {
+    background: url(../img/blog_pc.png) no-repeat center/cover;
+    height: 250px;
+}
+.blog h1 {
+    padding-top: 70px;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+}
+.blog .blog_text {
+    margin-top: 20px;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+}
+.blog .btn {
+    text-align: center;
+    margin-top: 40px;
+}
+.blog .btn a {
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+}
+.blog .btn a:hover {
+    background: rgba(240, 240, 240, 0.3);
+}
+
+/* news */
+.news {
+    width: 1200px;
+    height: 650px;
+    margin: 0 auto;
+}
+.news h1 {
+    margin-top: 100px;
+    text-align: center;    
+}
+.news .news_title {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.news_list ul li {
+    width: 400px;
+    float: left;
+}
+.news_list ul li a img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.news_list ul li a {
+    display: inline-block;
+    height: 400px;
+    margin-right: 50px;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+.news_list ul li a:hover {
+    border: 1px solid rgba(0,0,0,0.2);
+    background: linear-gradient(rgba(255,255,255,0.2),rgba(0,0,0,0.1));
+    transition: all 0.6s;
+}
+.news_list ul li a h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 30px 0;
+    padding: 0 20px;
+}
+.news_list ul li a .news_text {
+    padding: 0 20px;
+    line-height: 1.6;
+}
+
+/* cloud */
+.cloud {
+    background: url(../img/bg_business.png) no-repeat center/cover;
+    height: 250px;
+}
+.cloud h1 {
+    padding-top: 70px;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+}
+.cloud .cloud_text {
+    margin-top: 20px;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+}
+.cloud .btn {
+    text-align: center;
+    margin-top: 40px;
+}
+.cloud .btn a {
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+}
+.cloud .btn a:hover {
+    background: rgba(240, 240, 240, 0.3);
+}
+
+/* footder */ 
+footer {
+    height: 50px;
+    background: rgba(0,0,0,0.9);
+    text-align: center;
+}
+footer h1 {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.3);
+    padding-top: 15px;
+}
